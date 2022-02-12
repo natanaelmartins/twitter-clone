@@ -7,7 +7,6 @@ import {
   FavoriteBorder,
   Person,
   ExitToApp,
-  Rocketseat,
   Twitter,
  } from '../../styles/Icons';
 
