@@ -7,7 +7,8 @@ import {
   FavoriteBorder,
   Person,
   ExitToApp,
-  Rocketseat
+  Rocketseat,
+  Twitter,
  } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -40,12 +41,13 @@ export const Topside = styled.div`
   }
 `;
 
-export const Logo = styled(Rocketseat)`
-  width: 41px;
-  height: 41px;
+export const Logo = styled(Twitter)`
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
 
   > path {
-    fill: var(--twitter);
+    fill: white;
   }
 
   margin-bottom: 20px;
@@ -144,7 +146,14 @@ export const Avatar = styled.div`
   flex-shrink: 0; /* Para não ficar espremido na tela */
 
   border-radius: 50%; /* Para ficar arredondado */
-  background: var(--gray);
+
+  > img { 
+    z-index: 2;
+    width: 39px;
+    height: 39px;
+    
+    clip-path: circle();
+  }
 `;
 
 export const ProfileData = styled.div`

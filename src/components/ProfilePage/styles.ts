@@ -18,26 +18,38 @@ export const Container = styled.div`
   }
 `;
 export const Banner = styled.div`
+
   flex-shrink: 0;
-
   width: 100%;
-  height: min(33vw, 199px);
-
-  background: var(--twitter);
-
+  height: min(33vw, 189px);
   position: relative;
+  cursor: pointer;
+  
+  > img {
+    object-fit: cover;
+    width: 100%;
+    height: min(33vw, 189px);
+  }
+  
 `;
 export const Avatar = styled.div`
-  width: max(45px, min(135px, 22vw));
-  height: max(45px, min(135px, 22vw));
+   position: absolute;
+   
+   bottom: max(-60px, -10vw);
+   left: 15px;
+   border-radius: 50%;
 
-  border: 3.75px solid var(--primary);
-  background: var(--gray);
-  border-radius: 50%;
-
-  position: absolute;
-  bottom: max(-60px, -10vw);
-  left: 15px;
+  > img { 
+    z-index: 2;
+    width: max(45px, min(135px, 22vw));
+    height: max(45px, min(145px, 22vw));
+    
+    background: var(--gray);
+    clip-path: circle();
+    
+    bottom: max(-60px, -10vw);
+    left: 15px;
+  }
 `;
 export const ProfileData = styled.div`
   padding: min(calc(10vw + 7px), 67px) 16px 0;

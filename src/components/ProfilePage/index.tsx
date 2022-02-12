@@ -18,7 +18,10 @@ const ProfilePage: React.FC = () => {
   return (
     <Container>
       <Banner>
-        <Avatar />
+        <Avatar>
+          <img src="https://telegra.ph/file/2861a8a4acfe5e93c99f2.jpg" alt="Natanael Martins"/>
+        </Avatar>
+        <img src="https://telegra.ph/file/17e5cd9e0722d4163d7b0.jpg" alt="twitter header" />
       </Banner>
 
       <ProfileData>

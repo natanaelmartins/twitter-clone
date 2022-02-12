@@ -16,7 +16,9 @@ const FollowSuggestion: React.FC<Props> = ({ name, nickname }) => {
   return (
     <Container>
       <div>
-        <Avatar />
+        <Avatar>
+        <img src="https://telegra.ph/file/10d2a8eec8c97ec3565e7.jpg" alt="Twitter Icon"/>
+        </Avatar>
 
         <Info>
           <strong>{name}</strong>

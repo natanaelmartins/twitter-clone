@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Chat, Rocketseat, Favorite } from '../../styles/Icons';
+import { Chat, Rocketseat, Favorite, Twitter, Retweet } from '../../styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ export const Retweeted = styled.div`
   color: var(--gray);
 `;
 
-export const RocketseatIcon = styled(Rocketseat)`
+export const RocketseatIcon = styled(Retweet)`
   width: 16px;
   height: 16px;
 
@@ -43,16 +43,20 @@ export const Body = styled.div`
 `;
 
 export const Avatar = styled.div`
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
-  flex-shrink: 0;
+  > img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    
+    background: var(--gray);
+    position: absolute;
+    
+    top: 0;
+    left: 0;
 
-  background: var(--gray);
-  position: absolute;
-
-  top: 0;
-  left: 0;
+    cursor: pointer;
+  }
 `;
 
 export const Content = styled.div`
@@ -102,18 +106,20 @@ export const Description = styled.p`
 `;
 
 export const ImageContent = styled.div`
-  margin-top: 12px;
-  width: 100%;
-
-  height: min(285px, max(175px, 41vw));
-
-  background: var(--outline);
-  border-radius: 14px;
-
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.7;
+  > img {
+    margin-top: 12px;
+    width: 100%;
+    
+    height: min(285px, max(175px, 41vw));
+    
+    background: var(--outline);
+    border-radius: 14px;
+    
+    cursor: pointer;
+    
+    &:hover {
+      opacity: 0.7;
+    }
   }
 `;
 
@@ -179,6 +185,6 @@ const iconCSS = css`
 
 export const CommentIcon = styled(Chat)`${iconCSS}`;
 
-export const RetweetIcon = styled(Rocketseat)`${iconCSS}`;
+export const RetweetIcon = styled(Retweet)`${iconCSS}`;
 
 export const LikeIcon = styled(Favorite)`${iconCSS}`;

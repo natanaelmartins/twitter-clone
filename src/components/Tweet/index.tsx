@@ -27,19 +27,23 @@ const Tweet: React.FC = () => {
       </Retweeted>
 
       <Body>
-        <Avatar />
+        <Avatar>
+        <img src="https://telegra.ph/file/10d2a8eec8c97ec3565e7.jpg" alt="Twitter"/>
+        </Avatar>
 
         <Content>
           <Header>
-            <strong>Rocketseat</strong>
-            <span>@rocketseat</span>
+            <strong>Twitter</strong>
+            <span>@twitter</span>
             <Dot />
             <time>14 de jan</time>
           </Header>
 
           <Description>Parabéns pelo novo projeto! c:</Description>
 
-          <ImageContent />
+          <ImageContent>
+          <img src="https://telegra.ph/file/155794fe2df6e6885ff0a.jpg" alt="Número um"/>
+          </ImageContent>
 
           <Icons>
             <Status>
