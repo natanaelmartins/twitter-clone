@@ -21,6 +21,8 @@ export const Avatar = styled.div`
     border-radius: 50%;
     margin-right: 10px;
   }
+  
+  cursor: pointer;
 `;
 
 export const Info = styled.div`
