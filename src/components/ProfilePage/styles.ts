@@ -39,10 +39,12 @@ export const Avatar = styled.div`
    left: 15px;
    border-radius: 50%;
 
-  > img { 
+  > img {
+    /* Usei o cover para melhorar a qualidade da imagem */
+    object-fit: cover;
     z-index: 2;
-    width: max(45px, min(135px, 22vw));
-    height: max(45px, min(145px, 22vw));
+    width: max(45px, min(125px, 22vw));
+    height: max(45px, min(140px, 22vw));
     
     background: var(--gray);
     clip-path: circle();
