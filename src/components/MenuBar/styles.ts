@@ -146,7 +146,8 @@ export const Avatar = styled.div`
 
   border-radius: 50%; /* Para ficar arredondado */
 
-  > img { 
+  > img {
+    object-fit: cover;
     z-index: 2;
     width: 39px;
     height: 39px;
