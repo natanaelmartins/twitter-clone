@@ -105,6 +105,7 @@ export const MenuButton = styled.button`
 
   &:hover {
     background: var(--twitter-dark-hover);
+    outline: 10px;
   }
 
   &:hover, &.active {
