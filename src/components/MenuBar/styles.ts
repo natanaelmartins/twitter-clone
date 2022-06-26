@@ -33,7 +33,6 @@ export const Container = styled.div`
 export const Topside = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media (min-width: 1280px) {
     align-items: flex-start;
@@ -73,7 +72,7 @@ export const MenuButton = styled.button`
     padding-right: 15px;
   }
 
-  padding: 8.25px 0;
+  padding: 8.25px 10px;
   outline: 0;
 
   & + button {
