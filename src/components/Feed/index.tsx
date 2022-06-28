@@ -3,8 +3,8 @@ import { Container, Tab, Tweets } from './styles';
 import FlipMove from "react-flip-move";
 import Tweet from '../Tweet';
 import db from '../firebase.js';
-import Post from './Post';
-import './Feed.css';
+import Post from '../Post';
+/* import './Feed.css'; */
 
 
 function Feed () {
