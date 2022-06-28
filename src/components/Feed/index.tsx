@@ -1,10 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container, Tab, Tweets } from './styles';
-import FlipMove from "react-flip-move";
 import Tweet from '../Tweet';
+
+const Feed: React.FC = () => {
+  return(
+    <Container>
+      <Tab>Tweets</Tab>
+
+      
+      <Tweets>
+        <Tweet />
+        <Tweet />
+        <Tweet />
+        <Tweet />
+      </Tweets> 
+    </Container>
+  )
+}
+
+export default Feed;
+
+
+
+
+
+
+/*
+import FlipMove from "react-flip-move";
 import db from '../firebase.js';
 import Post from '../Post';
-/* import './Feed.css'; */
+import './Feed.css'; 
+
 
 
 function Feed () {
@@ -41,22 +67,4 @@ function Feed () {
  );
 }
 
-export default Feed;
-
-/*
-const Feed: React.FC = () => {
-  return(
-    <Container>
-      <Tab>Tweets</Tab>
-
-      
-      <Tweets>
-        <Tweet />
-        <Tweet />
-        <Tweet />
-        <Tweet />
-      </Tweets> 
-    </Container>
-  )
-}
 */
