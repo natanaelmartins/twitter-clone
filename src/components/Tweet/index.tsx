@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { 
   Container, 
@@ -17,6 +17,7 @@ import {
   RetweetIcon,
   LikeIcon,
  } from './styles';
+
 
 const Tweet: React.FC = () => {
   return (
@@ -66,3 +67,34 @@ const Tweet: React.FC = () => {
 }
 
 export default Tweet;
+
+
+
+
+/*
+
+import db from './firebase';
+
+function Tweet() {
+  const [tweetMessage, setTweetMessage] = useState("");
+  const [tweetImage, setTweetImage] = useState("");
+  
+  const sendTweet = (e) => {
+    e.preventDefault();
+    
+    db.collection("posts").add({
+      displayName: "Natanael Martins",
+      username: "Mercuryw1ng",
+      verified: true,
+      text: tweetMessage,
+      image: tweetImage,
+      avatar:
+        "https://telegra.ph/file/2861a8a4acfe5e93c99f2.jpg"
+    });
+    
+    setTweetMessage("");
+    setTweetImage("");
+  };
+  
+ 
+*/
