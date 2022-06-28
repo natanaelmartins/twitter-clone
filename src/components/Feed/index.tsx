@@ -1,19 +1,12 @@
-/* por enquanto, tudo ok */
 import React, { useState, useEffect } from 'react';
-
-/* altere o Tweet */
+import { Container, Tab, Tweets } from './styles';
+import FlipMove from "react-flip-move";
 import Tweet from '../Tweet';
 import db from '../firebase.js';
-
-/*
 import Post from './Post';
 import './Feed.css';
-import FlipMove from "react-flip-move";
-*/
 
-import { Container, Tab, Tweets } from './styles';
 
-/*
 function Feed () {
   const [posts, setPosts] = useState([]);
   
@@ -24,8 +17,33 @@ function Feed () {
   }, []);
   
   return (
-*/
-  
+  <div className="feed">
+    <div className="feed_header">
+      <h2>Home</h2>
+     </div>
+     
+     <TweetBox />
+     
+     <FlipMove>
+       {posts.map((post) => (
+         <Post
+           key={post.text}
+           displayName={post.displayName}
+           username={post.username}
+           verified={post.verified}
+           text={post.text}
+           avatar={post.avatar}
+           image={post.image}
+         />
+       ))}
+     </FlipMove>
+   </div>
+ );
+}
+
+export default Feed;
+
+/*
 const Feed: React.FC = () => {
   return(
     <Container>
@@ -41,5 +59,4 @@ const Feed: React.FC = () => {
     </Container>
   )
 }
-
-export default Feed;
+*/
