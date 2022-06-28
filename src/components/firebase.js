@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
+import firebase from "firebase";
+
 const firebaseConfig = {
   apiKey: "AIzaSyB5BXSB67a6lEz-1xQPJuLqQ-t_STasGiQ",
   authDomain: "twitter-c89b2.firebaseapp.com",
@@ -11,5 +13,9 @@ const firebaseConfig = {
   measurementId: "G-EPP8F1S4V2"
 };
 
-const app = initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+export default db;
+
 const analytics = getAnalytics(app);
+const app = initializeApp(firebaseConfig);
