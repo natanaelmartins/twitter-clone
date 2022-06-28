@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 /* altere o Tweet */
 import Tweet from '../Tweet';
-import db from '../firebase';
+import db from 'firebase';
 
 /*
 import Post from './Post';
