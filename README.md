@@ -40,4 +40,4 @@ This project was inicially originated from Rocketseat's UI Clone series, you can
 - [x]  Added a profile picture and a cover on the `ProfilePage` component
     - [x]  Improved the quality of profile pictures using CSS `object-fit` property
 - [x]  Expanded the buttons hover background using padding
-- [x]  Created the 'EditPage' component
+- [x]  Created the 'EditarPerfil' component
