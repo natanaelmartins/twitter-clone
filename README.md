@@ -36,8 +36,8 @@ This project was inicially originated from Rocketseat's UI Clone series, you can
 
 > :bulb: These are my own contributions for the project 
 
-- [x]  Downloaded new icons for logo, comment and retweet at `icomoon`
-- [x]  Added a profile picture and a cover on the `ProfilePage` component
+- [x]  Included a profile picture and a cover on the `ProfilePage` component
     - [x]  Improved the quality of profile pictures using CSS `object-fit` property
-- [x]  Expanded the buttons hover background using padding
-- [x]  Created the 'EditarPerfil' component
+- [x]  Downloaded new icons for logo, comment and retweet at `icomoon`
+- [x]  Expanded the buttons hover background using the `padding` property
+- [x]  Created the `EditarPerfil` component
