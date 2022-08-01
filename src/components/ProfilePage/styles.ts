@@ -139,3 +139,13 @@ export const EditButton = styled(Button)`
     font-size: 15px;
   }
 `;
+
+export const EditData = styled(Button)`
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+
+  @media (min-width: 320px) {
+  }
+`;
