@@ -36,19 +36,21 @@ This project was inicially originated from Rocketseat's UI Clone series, you can
 
 > :bulb: These are my own contributions for the project 
 
-- [x]  Included a profile picture and a cover on the `ProfilePage` component
-    - [x]  Improved the quality of profile pictures using CSS `object-fit` property
-- [x]  Downloaded new icons for logo, comment and retweet at `icomoon`
+- [x]  Include a profile picture and a header on the `ProfilePage` component
+    - [x]  Improve the quality of the profile picture using CSS `object-fit` property
+- [x]  Download new icons for twitter logo, comment and retweet at `icomoon`
 - [x]  Expanded the buttons hover background using the `padding` property
-- [x]  Created the `Editar Perfil` component
+- [x]  Created the `EditProfile` component
+- [ ] Add the placeholder in the `Form` tags inside `EditProfile` 
+- [ ] Enhance the `SideBar` stylization 
+- [ ] Allow visitors to change profile data (including avatar and header) inside `EditProfile`
 
 
-<!--- 
 
-Dificuldades encontradas 
+## Dificuldades encontradas 
 
-* O Netlify aprensentou o erro "Line 2:17:  'useState' is defined but never used  @typescript-eslint/no-unused-vars" 
+> Erro com o 'useState' 
 
-Não sei bem o porquê, já que eu defini e usei o 'useState'. Apesar de ter sido apenas um warning, o Netlify trata warnings como erros. Para fazer o deploy, precisei mudar essa configuração do Netlify (mudei o build command para 'CI=false npm run build' -- antes era apenas npm run build --)
+O Netlify aprensentou o warning "Line 2:17:  'useState' is defined but never used  @typescript-eslint/no-unused-vars".
 
---->
+Não sei bem o porquê, já que eu defini e usei o 'useState'. Apesar de ter sido apenas um warning, o Netlify trata warnings como erros. Para fazer o deploy, precisei mudar essa configuração do Netlify (mudei o build command para 'CI=false npm run build' -- antes era apenas npm run build --).
