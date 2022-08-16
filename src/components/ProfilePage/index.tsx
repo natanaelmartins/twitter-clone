@@ -1,20 +1,78 @@
-import React from 'react';
+/* o useState será usado pelo script do botão */
+import React, { useState } from 'react';
 
 import Feed from '../Feed';
 
-/* Importei todos os componentes que serão usados nesta seção */
 import { 
   Container, 
   Banner, 
   Avatar, 
   ProfileData, 
   LocationIcon, 
-  CakeIcon, 
+  CakeIcon,
+  CloseIcon,
   Followage,
-  EditButton 
+  EditButton,
+  Header,
+  SaveButton,
+  Background,
+  EditData,
+  Form
 } from './styles';
 
 const ProfilePage: React.FC = () => {
+  /* código do botão "Editar Perfil" */
+  const [showResults, setShowResults] = React.useState(false);
+  const onClick = () => { showResults ? setShowResults(false) : setShowResults(true) };
+  
+  /* código da aba "Editar Perfil" */
+  const EditPage = () => {
+    return (
+     <Background>
+      <EditData>
+       <Header>
+      
+        <button>
+        <CloseIcon onClick={onClick} />
+        </button>
+        <h3 style={{marginLeft: "20px"}}>Editar perfil</h3>
+        <SaveButton outlined onClick={onClick}>Salvar</SaveButton>
+         
+        </Header>
+        
+        <Container>
+          <Banner>
+            <Avatar>
+              <img src="https://telegra.ph/file/2861a8a4acfe5e93c99f2.jpg" alt="Natanael Martins"/>
+            </Avatar>
+          <img src="https://telegra.ph/file/17e5cd9e0722d4163d7b0.jpg" alt="twitter header" />
+        </Banner>
+      </Container>
+        
+        <Form>
+          <p>Nome</p>
+          <p>Natanael</p>
+        </Form>
+        
+        <Form>
+          <p>Bio</p>
+          <p></p>
+        </Form>
+        
+        <Form>
+          <p>Localização</p>
+          <p>Fortaleza</p>
+        </Form>
+        
+        <Form>
+          <p>Site</p>
+          <p></p>
+        </Form>
+      </EditData>
+     </Background>
+    );
+  }
+  
   return (
     <Container>
       <Banner>
@@ -25,7 +83,11 @@ const ProfilePage: React.FC = () => {
       </Banner>
 
       <ProfileData>
-        <EditButton outlined>Editar Perfil</EditButton>
+       
+        <div>
+          <EditButton outlined onClick={onClick}>Editar Perfil</EditButton>
+          { showResults ? <EditPage /> : null }
+        </div>
 
         <h1>Natanael Martins</h1>
         <h1>@Mercuryw1ng</h1>
