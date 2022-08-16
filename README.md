@@ -47,12 +47,10 @@ This project was inicially originated from Rocketseat's UI Clone series, you can
 
 
 
-## Dificuldades encontradas 
+## Difficulties
 
-> Erro com o 'useState' 
+* Error with 'useState'
 
-O Netlify aprensentou o warning <b>"Line 2:17:  'useState' is defined but never used  @typescript-eslint/no-unused-vars".</b>
+Netlify presented the following error: <b>"Line 2:17:  'useState' is defined but never used  @typescript-eslint/no-unused-vars".</b>
 
-Não sei bem o porquê, já que eu defini e usei o 'useState'. Apesar de ter sido apenas um warning, o Netlify trata warnings como erros. 
-
-Para fazer o deploy, precisei mudar essa configuração do Netlify (mudei o build command para 'CI=false npm run build' -- antes era apenas npm run build --).
+Despite being just a warning, Netlify treats them as erros. To send my deploy, I had to change the build command to 'CI=false npm run build'.
