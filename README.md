@@ -40,4 +40,15 @@ This project was inicially originated from Rocketseat's UI Clone series, you can
     - [x]  Improved the quality of profile pictures using CSS `object-fit` property
 - [x]  Downloaded new icons for logo, comment and retweet at `icomoon`
 - [x]  Expanded the buttons hover background using the `padding` property
-- [x]  Created the `EditarPerfil` component
+- [x]  Created the `Editar Perfil` component
+
+
+<!--- 
+
+Dificuldades encontradas 
+
+* O Netlify aprensentou o erro "Line 2:17:  'useState' is defined but never used  @typescript-eslint/no-unused-vars" 
+
+Não sei bem o porquê, já que eu defini e usei o 'useState'. Apesar de ter sido apenas um warning, o Netlify trata warnings como erros. Para fazer o deploy, precisei mudar essa configuração do Netlify (mudei o build command para 'CI=false npm run build' -- antes era apenas npm run build --)
+
+--->
