@@ -39,11 +39,11 @@ This project was inicially originated from Rocketseat's UI Clone series, you can
 - [x]  Include a profile picture and a header on the `ProfilePage` component
     - [x]  Improve the quality of the profile picture using CSS `object-fit` property
 - [x]  Download new icons for twitter logo, comment and retweet at `icomoon`
-- [x]  Expanded the buttons hover background using the `padding` property
-- [x]  Created the `EditProfile` component
-- [ ] Add the placeholder in the `Form` tags inside `EditProfile` 
-- [ ] Enhance the `SideBar` stylization 
-- [ ] Allow visitors to change profile data (including avatar and header) inside `EditProfile`
+- [x]  Expand the buttons hover background using the `padding` property
+- [x]  Create the `EditProfile` component
+- [x]  Create the `Form` and `FormInput` components
+- [ ]  Enhance the `SideBar` stylization 
+- [ ]  Allow visitors to change profile data (including avatar and header) inside `EditProfile`
 
 
 
