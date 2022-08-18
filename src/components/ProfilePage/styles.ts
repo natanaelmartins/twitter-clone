@@ -195,7 +195,6 @@ export const Form = styled.div`
   margin-right: 15px;
   border: 1px solid rgb(51, 54, 57);
   border-radius: 5px;
-  padding: 10px;
  
   :last-of-type {
     margin-bottom: 60px;
@@ -212,6 +211,21 @@ export const Form = styled.div`
       font-size: 16px;
       margin-bottom: 4px;
     }
+  }
+`;
+
+export const FormInput = styled.input`
+  font-size: 16px;
+  width: 96.5%;
+  padding: 10px 10px 30px;
+  
+  &:focus {
+    outline: 1px solid var(--twitter);
+    border-radius: 5px;
+  }
+  
+  &::placeholder { 
+    color: var(--gray);
   }
 `;
 
