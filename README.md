@@ -44,7 +44,7 @@ This project was inicially originated from Rocketseat's UI Clone series, you can
 - [x]  Create the `Form` and `FormInput` components
 - [ ]  Enhance the `SideBar` stylization 
 - [ ]  Allow visitors to change profile data (including avatar and header) inside `EditProfile`
-
+- [ ]  Allow visitors to switch between dark and light mode
 
 
 ## Difficulties
