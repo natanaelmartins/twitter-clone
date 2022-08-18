@@ -17,7 +17,8 @@ import {
   SaveButton,
   Background,
   EditData,
-  Form
+  Form,
+  FormInput
 } from './styles';
 
 const ProfilePage: React.FC = () => {
