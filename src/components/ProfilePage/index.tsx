@@ -50,23 +50,19 @@ const ProfilePage: React.FC = () => {
       </Container>
         
         <Form>
-          <p>Nome</p>
-          <p>Natanael</p>
+          <FormInput placeholder = "Nome" />
         </Form>
         
         <Form>
-          <p>Bio</p>
-          <p></p>
+          <FormInput placeholder = "Bio" style={{padding: "10px 10px 75px"}} />
         </Form>
         
         <Form>
-          <p>Localização</p>
-          <p>Fortaleza</p>
+          <FormInput placeholder = "Localização" />
         </Form>
         
         <Form>
-          <p>Site</p>
-          <p></p>
+          <FormInput placeholder = "Site" style={{padding: "10px 10px 75px"}} />
         </Form>
       </EditData>
      </Background>
