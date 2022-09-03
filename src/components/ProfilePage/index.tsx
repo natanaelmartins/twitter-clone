@@ -21,6 +21,9 @@ import {
   FormInput
 } from './styles';
 
+import AvatarPicture from '../Assets/Avatar.jpg';
+import HeaderPicture from '../Assets/Header.jpg';
+
 const ProfilePage: React.FC = () => {
   /* código do botão "Editar Perfil" */
   const [showResults, setShowResults] = React.useState(false);
@@ -44,9 +47,9 @@ const ProfilePage: React.FC = () => {
         <Container>
           <Banner>
             <Avatar>
-              <img src="https://telegra.ph/file/2861a8a4acfe5e93c99f2.jpg" alt="Natanael Martins"/>
+              <img src={AvatarPicture} alt="Natanael Martins"/>
             </Avatar>
-          <img src="https://telegra.ph/file/17e5cd9e0722d4163d7b0.jpg" alt="twitter header" />
+          <img src={HeaderPicture} alt="twitter header" />
         </Banner>
       </Container>
         
@@ -74,9 +77,9 @@ const ProfilePage: React.FC = () => {
     <Container>
       <Banner>
         <Avatar>
-          <img src="https://telegra.ph/file/2861a8a4acfe5e93c99f2.jpg" alt="Natanael Martins"/>
+          <img src={AvatarPicture} alt="Natanael Martins"/>
         </Avatar>
-        <img src="https://telegra.ph/file/17e5cd9e0722d4163d7b0.jpg" alt="twitter header" />
+        <img src={HeaderPicture} alt="twitter header" />
       </Banner>
 
       <ProfileData>
