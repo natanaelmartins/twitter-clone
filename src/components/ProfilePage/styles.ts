@@ -219,7 +219,7 @@ export const Form = styled.div`
 export const FormText = styled.textarea`
   font-size: 16px;
   width: 96.5%;
-  padding: 35px 0px 10px 10px;
+  padding: 35px 10px 10px 10px;
   overflow: hidden;
   resize: none;
   margin-bottom: -5px;
