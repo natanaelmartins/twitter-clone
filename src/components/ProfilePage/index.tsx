@@ -34,7 +34,7 @@ const ProfilePage: React.FC = () => {
   const messageRef = useRef();
   const handleSave = async (e: any) => {
     e.preventDefault();
-    console.log(messageRef?.current?.value);
+    console.log(messageRef.current.value);
   };
   
   /* código da aba "Editar Perfil" */
