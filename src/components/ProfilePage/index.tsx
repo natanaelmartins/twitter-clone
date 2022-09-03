@@ -1,5 +1,5 @@
 /* o useState será usado pelo script do botão */
-import React, { useState } from 'react';
+import React, { useState }, { useRef } from 'react';
 
 import Feed from '../Feed';
 
