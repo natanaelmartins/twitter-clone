@@ -1,5 +1,5 @@
 /* o useState será usado pelo script do botão */
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 
 import Feed from '../Feed';
 
@@ -30,13 +30,6 @@ const ProfilePage: React.FC = () => {
   const [showResults, setShowResults] = React.useState(false);
   const onClick = () => { showResults ? setShowResults(false) : setShowResults(true) };
   
-  /* código relacionado ao Firebase */
-  const messageRef = useRef();
-  const handleSave = async (e: any) => {
-    e.preventDefault();
-    console.log(messageRef.current.value);
-  };
-  
   /* código da aba "Editar Perfil" */
   const EditPage = () => {
     return (
@@ -61,9 +54,8 @@ const ProfilePage: React.FC = () => {
         </Banner>
       </Container>
         
-       <form onSubmit={handleSave}>
         <Form>
-          <FormText maxLength={160} ref={messageRef} />
+          <FormText maxLength={160} />
           <FormLabel>Nome</FormLabel>
         </Form>
         
@@ -81,8 +73,6 @@ const ProfilePage: React.FC = () => {
           <FormText style={{padding: "35px 10px 55px 10px"}} maxLength={160} />
           <FormLabel>Site</FormLabel>
         </Form>
-        <button type="submit">submit</button>
-       </form>
       </EditData>
      </Background>
     );
