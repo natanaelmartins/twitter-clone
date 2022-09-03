@@ -236,7 +236,7 @@ export const FormText = styled.textarea`
 `;
 
 export const FormLabel = styled.label`
-  font-size: 90%
+  font-size: 90%;
   position: absolute;
   top: 0.68rem;
   color: gray;
