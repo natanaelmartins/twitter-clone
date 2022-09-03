@@ -195,6 +195,8 @@ export const Form = styled.div`
   margin-right: 15px;
   border: 1px solid rgb(51, 54, 57);
   border-radius: 5px;
+  
+  position: relative;
  
   :last-of-type {
     margin-bottom: 60px;
@@ -214,10 +216,14 @@ export const Form = styled.div`
   }
 `;
 
-export const FormInput = styled.input`
+export const FormText = styled.textarea`
   font-size: 16px;
   width: 96.5%;
-  padding: 10px 10px 30px;
+  padding: 35px 0px 10px 10px;
+  overflow: hidden;
+  resize: none;
+  margin-bottom: -5px;
+
   
   &:focus {
     outline: 1px solid var(--twitter);
@@ -227,6 +233,14 @@ export const FormInput = styled.input`
   &::placeholder { 
     color: var(--gray);
   }
+`;
+
+export const FormLabel = styled.label`
+  font-size: 90%
+  position: absolute;
+  top: 0.68rem;
+  color: gray;
+  left: 0.59rem;
 `;
 
 export const Header = styled.div`
