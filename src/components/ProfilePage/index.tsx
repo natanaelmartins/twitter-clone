@@ -60,7 +60,7 @@ const ProfilePage: React.FC = () => {
         </Form>
         
         <Form>
-          <FormText style={{padding: "35px 0px 55px 20px"}} maxLength={160} />
+          <FormText style={{padding: "35px 10px 55px 10px"}} maxLength={160} />
           <FormLabel>Bio</FormLabel>
         </Form>
         
@@ -70,7 +70,7 @@ const ProfilePage: React.FC = () => {
         </Form>
         
         <Form>
-          <FormText style={{padding: "35px 0px 55px 20px"}} maxLength={160} />
+          <FormText style={{padding: "35px 10px 55px 10px"}} maxLength={160} />
           <FormLabel>Site</FormLabel>
         </Form>
       </EditData>
