@@ -34,7 +34,7 @@ const ProfilePage: React.FC = () => {
   const messageRef = useRef();
   const handleSave = async (e: any) => {
     e.preventDefault();
-    console.log(messageRef.current.value);
+    console.log(messageRef?.current?.value);
   };
   
   /* código da aba "Editar Perfil" */
@@ -81,7 +81,8 @@ const ProfilePage: React.FC = () => {
           <FormText style={{padding: "35px 10px 55px 10px"}} maxLength={160} />
           <FormLabel>Site</FormLabel>
         </Form>
-        </form>
+        <button type="submit">submit</button>
+       </form>
       </EditData>
      </Background>
     );
