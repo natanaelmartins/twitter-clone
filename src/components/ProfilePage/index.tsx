@@ -18,7 +18,8 @@ import {
   Background,
   EditData,
   Form,
-  FormInput
+  FormText,
+  FormLabel
 } from './styles';
 
 import AvatarPicture from '../Assets/Avatar.jpg';
@@ -54,19 +55,23 @@ const ProfilePage: React.FC = () => {
       </Container>
         
         <Form>
-          <FormInput placeholder = "Nome" />
+          <FormText maxLength={160} />
+          <FormLabel>Nome</FormLabel>
         </Form>
         
         <Form>
-          <FormInput placeholder = "Bio" style={{padding: "10px 10px 75px"}} />
+          <FormText style={{padding: "35px 0px 55px 20px"}} maxLength={160} />
+          <FormLabel>Bio</FormLabel>
         </Form>
         
         <Form>
-          <FormInput placeholder = "Localização" />
+          <FormText maxLength={160} />
+          <FormLabel>Localização</FormLabel>
         </Form>
         
         <Form>
-          <FormInput placeholder = "Site" style={{padding: "10px 10px 75px"}} />
+          <FormText style={{padding: "35px 0px 55px 20px"}} maxLength={160} />
+          <FormLabel>Site</FormLabel>
         </Form>
       </EditData>
      </Background>
