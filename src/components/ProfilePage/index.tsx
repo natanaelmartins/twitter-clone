@@ -32,10 +32,10 @@ const ProfilePage: React.FC = () => {
   
   /* código relacionado ao Firebase */
   const messageRef = useRef();
-  const handleSave = async(e) => {
+  const handleSave = async (e) => {
     e.preventDefault();
     console.log(messageRef.current.value);
-  } 
+  };
   
   /* código da aba "Editar Perfil" */
   const EditPage = () => {
