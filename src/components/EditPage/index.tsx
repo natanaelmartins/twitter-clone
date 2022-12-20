@@ -97,7 +97,7 @@ const EditPage: React.FC<Props> = ({ closeModal, username, setUsername, bio, set
         <Form>
           <FormInput
           maxLength={160}
-          value={localUsername || 'Natanael Martins'}
+          value={localUsername}
           onChange={(event) => setLocalUsername(event.target.value)}
           />
           <FormLabel>Nome</FormLabel>
@@ -107,7 +107,7 @@ const EditPage: React.FC<Props> = ({ closeModal, username, setUsername, bio, set
           <FormInput 
            style={{padding: "35px 10px 55px 10px"}} 
            maxLength={160} 
-           value={localBio || 'Estudante de Sistemas de Informação :)'}
+           value={localBio}
            onChange={(event) => setLocalBio(event.target.value)}
            />
           <FormLabel>Bio</FormLabel>
