@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 
 import Feed from '../Feed';
+import EditPage from '../EditPage';
 
 import { 
   Container, 
@@ -10,95 +11,58 @@ import {
   ProfileData, 
   LocationIcon, 
   CakeIcon,
-  CloseIcon,
   Followage,
   EditButton,
   Header,
-  SaveButton,
-  Background,
-  EditData,
-  Form,
-  FormText,
-  FormLabel
+  Background
 } from './styles';
 
 import AvatarPicture from '../Assets/Avatar.jpg';
 import HeaderPicture from '../Assets/Header.jpg';
 
-const ProfilePage: React.FC = () => {
-  /* código do botão "Editar Perfil" */
-  const [showResults, setShowResults] = React.useState(false);
-  const onClick = () => { showResults ? setShowResults(false) : setShowResults(true) };
-  
-  /* código da aba "Editar Perfil" */
-  const EditPage = () => {
-    return (
-     <Background>
-      <EditData>
-       <Header>
-      
-        <button>
-        <CloseIcon onClick={onClick} />
-        </button>
-        <h3 style={{marginLeft: "20px"}}>Editar perfil</h3>
-        <SaveButton outlined onClick={onClick}>Salvar</SaveButton>
-         
-        </Header>
-        
-        <Container>
-          <Banner>
-            <Avatar>
-              <img src={AvatarPicture} alt="Natanael Martins"/>
-            </Avatar>
-          <img src={HeaderPicture} alt="twitter header" />
-        </Banner>
-      </Container>
-        
-        <Form>
-          <FormText maxLength={160} />
-          <FormLabel>Nome</FormLabel>
-        </Form>
-        
-        <Form>
-          <FormText style={{padding: "35px 10px 55px 10px"}} maxLength={160} />
-          <FormLabel>Bio</FormLabel>
-        </Form>
-        
-        <Form>
-          <FormText maxLength={160} />
-          <FormLabel>Localização</FormLabel>
-        </Form>
-        
-        <Form>
-          <FormText style={{padding: "35px 10px 55px 10px"}} maxLength={160} />
-          <FormLabel>Site</FormLabel>
-        </Form>
-      </EditData>
-     </Background>
-    );
-  }
+const ProfilePage: React.FC = (props) => {
+  const [showResults, setShowResults] = useState(false);
+  const [username, setUsername] = useState('');
+  const [bio, setBio] = useState('');
+  const [avatar, setAvatar] = useState<File | null>(null);
+  const [header, setHeader] = useState<File | null>(null);
+  const onClick = () => setShowResults(!showResults);
+  const closeModal = () => setShowResults(false);
   
   return (
     <Container>
       <Banner>
         <Avatar>
-          <img src={AvatarPicture} alt="Natanael Martins"/>
+          <img src={avatar ? URL.createObjectURL(avatar) : AvatarPicture} alt="Avatar escolhido pelo usuário" />
         </Avatar>
-        <img src={HeaderPicture} alt="twitter header" />
+        <img src={header ? URL.createObjectURL(header) : HeaderPicture} alt="Header escolhida pelo usuário" />
       </Banner>
 
       <ProfileData>
        
         <div>
-          <EditButton outlined onClick={onClick}>Editar Perfil</EditButton>
-          { showResults ? <EditPage /> : null }
+           { showResults ? (
+             <EditPage
+              closeModal={closeModal}
+              username={username}
+              setUsername={setUsername}
+              bio={bio}
+              setBio={setBio}
+              avatar={avatar}
+              setAvatar={setAvatar}
+              header={header}
+              setHeader={setHeader}
+            />
+         ) : (
+           <EditButton outlined onClick={onClick}>Editar Perfil</EditButton>
+         )}
         </div>
 
-        <h1>Natanael Martins</h1>
+        <h1>{username ? username : 'Natanael Martins'}</h1>
         <h1>@Mercuryw1ng</h1>
 
         <p>
-          Estudante de Sistemas de Informação :)
+          {bio ? bio : 'Estudante de Sistemas de Informação :)'}
         </p>
 
         <ul>
