@@ -42,4 +42,5 @@ This project was inicially originated from Rocketseat's UI Clone series, you can
 - [x]  Expand the buttons hover background using the `padding` property
 - [x]  Create the `EditProfile` component
 - [x]  Allow visitors to change profile data (including avatar and header) inside `EditProfile`
+    - [ ]  Expand the changes to the others components
 - [ ]  Enhance the stylization
