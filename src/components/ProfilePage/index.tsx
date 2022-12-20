@@ -22,8 +22,8 @@ import HeaderPicture from '../Assets/Header.jpg';
 
 const ProfilePage: React.FC = (props) => {
   const [showResults, setShowResults] = useState(false);
-  const [username, setUsername] = useState('');
-  const [bio, setBio] = useState('');
+  const [username, setUsername] = useState('Natanael Martins');
+  const [bio, setBio] = useState('Estudante de Sistemas de Informação :)');
   const [avatar, setAvatar] = useState<File | null>(null);
   const [header, setHeader] = useState<File | null>(null);
   const onClick = () => setShowResults(!showResults);
