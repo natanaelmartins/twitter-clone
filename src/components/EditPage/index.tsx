@@ -40,7 +40,7 @@ const EditPage: React.FC<Props> = ({ closeModal, username, setUsername, bio, set
   const [localHeader, setLocalHeader] = useState(header);
   
   const handleSave = () => {
-    if (localUsername !== undefined) setUsername(localUsername);
+    setUsername(localUsername);
     setBio(localBio);
     if (localAvatar !== undefined) setAvatar(localAvatar);
     if (localHeader !== undefined) setHeader(localHeader);
