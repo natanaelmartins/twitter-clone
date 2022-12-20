@@ -56,6 +56,7 @@ export const Avatar = styled.div`
    bottom: max(-70px, -10vw);
    left: 15px;
    border-radius: 50%;
+   cursor: pointer;
    
   > img {
     /* Usei o cover para melhorar a qualidade da imagem */
