@@ -36,21 +36,10 @@ This project was inicially originated from Rocketseat's UI Clone series, you can
 
 > :bulb: These are my own contributions for the project 
 
-- [x]  Include a profile picture and a header on the `ProfilePage` component
+- [x]  Include a default profile picture and header on the `ProfilePage` component
     - [x]  Improve the quality of the profile picture using CSS `object-fit` property
 - [x]  Download new icons for twitter logo, comment and retweet at `icomoon`
 - [x]  Expand the buttons hover background using the `padding` property
 - [x]  Create the `EditProfile` component
-- [x]  Create the `Form` and `FormInput` components
-- [ ]  Enhance the `SideBar` stylization 
-- [ ]  Allow visitors to change profile data (including avatar and header) inside `EditProfile`
-- [ ]  Allow visitors to switch between dark and light mode
-
-
-## Difficulties
-
-* Error with 'useState'
-
-Netlify presented the following error: <b>"Line 2:17:  'useState' is defined but never used  @typescript-eslint/no-unused-vars".</b>
-
-Despite being just a warning, Netlify treats them as erros. To send my deploy, I had to change the build command to 'CI=false npm run build'.
+- [x]  Allow visitors to change profile data (including avatar and header) inside `EditProfile`
+- [ ]  Enhance the stylization
