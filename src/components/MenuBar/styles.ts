@@ -48,13 +48,15 @@ export const Logo = styled(Twitter)`
     fill: white;
   }
 
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-left: 10px;
 `;
 
 export const MenuButton = styled.button`
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  margin-top: 5px;
 
   > span {
     display: none;
@@ -64,20 +66,14 @@ export const MenuButton = styled.button`
     > span {
       display: inline;
       margin-left: 19px;
-
-      font-weight: bold;
       font-size: 19px;
     }
 
     padding-right: 15px;
   }
 
-  padding: 8.25px 10px;
+  padding: 10px 10px;
   outline: 0;
-
-  & + button {
-    margin-top: 16.5px;
-  }
 
   & + button:last-child {
     margin-top: 33px;
@@ -107,8 +103,9 @@ export const MenuButton = styled.button`
     outline: 30px 30px;
   }
 
-  &:hover, &.active {
+  &.active {
     span, svg {
+      font-weight: bold;
       color: var(--twitter);
       fill: var(--twitter);
     }
