@@ -103,9 +103,18 @@ export const ProfileData = styled.div`
     > li {
       font-size: 15px;
       color: var(--gray);
+      
+      :first-of-type {
+        > svg {
+          fill: var(--gray);
+          margin-right: 5px;
+          margin-bottom: 5px;
+          }
+       }
       > svg {
         fill: var(--gray);
         margin-right: 5px;
+        margin-bottom: 6px;
       }
     }
   }
