@@ -1,8 +1,10 @@
 /* o useState será usado pelo script do botão */
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 
 import Feed from '../Feed';
 import EditPage from '../EditPage';
+
+import { MessageContext } from '../Layout';
 
 import { 
   Container, 
@@ -12,20 +14,17 @@ import {
   LocationIcon, 
   CakeIcon,
   Followage,
-  EditButton,
-  Header,
-  Background
+  EditButton
 } from './styles';
 
 import AvatarPicture from '../Assets/Avatar.jpg';
 import HeaderPicture from '../Assets/Header.jpg';
 
 const ProfilePage: React.FC = (props) => {
+  
+  const { username, setUsername, bio, setBio, avatar, setAvatar, header, setHeader } = useContext(MessageContext);
+
   const [showResults, setShowResults] = useState(false);
-  const [username, setUsername] = useState('Natanael Martins');
-  const [bio, setBio] = useState('Estudante de Sistemas de Informação :)');
-  const [avatar, setAvatar] = useState<File | null>(null);
-  const [header, setHeader] = useState<File | null>(null);
   const onClick = () => setShowResults(!showResults);
   const closeModal = () => setShowResults(false);
   
@@ -44,14 +43,6 @@ const ProfilePage: React.FC = (props) => {
            { showResults ? (
              <EditPage
               closeModal={closeModal}
-              username={username}
-              setUsername={setUsername}
-              bio={bio}
-              setBio={setBio}
-              avatar={avatar}
-              setAvatar={setAvatar}
-              header={header}
-              setHeader={setHeader}
             />
          ) : (
            <EditButton outlined onClick={onClick}>Editar Perfil</EditButton>
