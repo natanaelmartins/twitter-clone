@@ -42,6 +42,6 @@ This project was inicially originated from Rocketseat's UI Clone series, you can
 - [x]  Expand the buttons hover background using the `padding` property
 - [x]  Create the `EditProfile` component
 - [x]  Allow visitors to change profile data (including avatar and header) inside `EditProfile`
-    - [x]  Expand the changes to the others components
+    - [x]  Expand the changes to the others components using the `useContext` hook
 - [ ]  Allow visitors to tweet
 - [ ]  Implement a login system
