@@ -2,6 +2,9 @@ import React from 'react';
 
 import Button from '../Button';
 
+import { useContext } from 'react';
+import { MessageContext } from '../Layout';
+
 import { 
   Container, 
   Topside, 
@@ -18,7 +21,12 @@ import {
   ExitIcon,
 } from './styles';
 
+import AvatarIMG from '../Assets/Avatar.jpg';
+
 const MenuBar: React.FC = () => {
+  
+  const { username, avatar } = useContext(MessageContext);
+  
   return (
     <Container>
       <Topside>
@@ -56,11 +64,11 @@ const MenuBar: React.FC = () => {
 
       <Botside>
         <Avatar>
-        <img src="https://telegra.ph/file/2861a8a4acfe5e93c99f2.jpg" alt="Natanael Martins"/>
+          <img src={avatar ? URL.createObjectURL(avatar) : AvatarIMG} alt="Avatar escolhido pelo usuário" />
         </Avatar>
 
         <ProfileData>
-          <strong>Natanael Martins</strong>
+          <strong>{username}</strong>
           <span>@Mercuryw1ng</span>
         </ProfileData>
 
