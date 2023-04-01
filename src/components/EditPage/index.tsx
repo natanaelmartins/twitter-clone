@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
+import { useContext } from 'react';
+import { MessageContext } from '../Layout';
+
 import { 
   Container,   
   CloseIcon,
-  EditButton,
   BannerDiv,
   BannerLabel,
   AvatarLabel,
@@ -22,17 +24,11 @@ import HeaderIMG from '../Assets/Header.jpg';
 
 interface Props {
   closeModal: () => void;
-  username: string;
-  setUsername: (username: string) => void;
-  bio: string;
-  setBio: (bio: string) => void;
-  avatar: File | null | undefined;
-  setAvatar: (avatar: File | null) => void;
-  header: File | null | undefined;
-  setHeader: (header: File | null) => void;
 }
 
-const EditPage: React.FC<Props> = ({ closeModal, username, setUsername, bio, setBio, avatar, setAvatar, header, setHeader }) => {
+const EditPage: React.FC<Props> = ({ closeModal }) => {
+  
+  const { username, setUsername, bio, setBio, avatar, setAvatar, header, setHeader } = useContext(MessageContext);
   
   const [localUsername, setLocalUsername] = useState(username);
   const [localBio, setLocalBio] = useState(bio);
