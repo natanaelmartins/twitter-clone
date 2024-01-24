@@ -8,7 +8,6 @@ export const Container = styled.div`
   width: min(601px, 100%);
 
   @media (min-width: 500px) {
-    /* Aqui são as barrinhas cinzas verticais */
     border-left: 1px solid var(--outline);
     border-right: 1px solid var(--outline);
   }

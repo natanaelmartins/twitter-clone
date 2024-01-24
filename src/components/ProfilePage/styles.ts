@@ -4,6 +4,7 @@ import styled, { css } from "styled-components";
 import { LocationOn, Cake, Close } from '../../styles/Icons';
 import Button from '../Button';
 
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
