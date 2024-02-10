@@ -45,8 +45,9 @@ export const EditData = styled.div`
   }
 
   > div {
-    color: 'white';
-    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     > h5 {
       color: blue;
@@ -82,7 +83,6 @@ export const Container = styled.div`
     height: 100%; 
     background: #000; 
     position: fixed;
-    z-index: 3; 
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -92,23 +92,16 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled(Twitter)`
-  width: 31px;
-  height: 31px;
+  height: 5%;
   cursor: pointer;
 
   > path {
     fill: white;
   }
-
-  margin-bottom: 15px;
 `;
 
 export const Header = styled.div`
-  z-index: 2;
-  display: flex;
-  align-items: center; 
-  text-align: left;
-  padding: 8px 0 9px 13px;
+
   > button {
     padding: 0;
     border: 0;
