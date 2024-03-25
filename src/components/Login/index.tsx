@@ -32,18 +32,18 @@ const Login: React.FC = () => {
 
               {showSignUp ? (
                 <Form>
-                  <FormInput maxLength={160} />
+                  <FormInput maxLength={50} />
                   <FormLabel>Nome de usuário</FormLabel>
                 </Form>
               ) : null}
 
               <Form>
-                <FormInput maxLength={160} />
+                <FormInput maxLength={100} />
                 <FormLabel>Email</FormLabel>
               </Form>
 
               <Form>
-                <FormInput maxLength={160} />
+                <FormInput maxLength={64} type='password'/>
                 <FormLabel>Senha</FormLabel>
               </Form>
 

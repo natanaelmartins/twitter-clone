@@ -83,11 +83,9 @@ export const Container = styled.div`
     height: 100%; 
     background: #000; 
     position: fixed;
-    display: flex; 
+    display: flex;
     justify-content: center; 
     align-items: center; 
-    flex-wrap: wrap;
-
     flex-direction: column;
 `;
 

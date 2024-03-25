@@ -6,7 +6,6 @@ import Login from './components/Login';
 
 import Layout from './components/Layout'
 
-/*
 function App() {
   return (
     <>
@@ -16,8 +15,8 @@ function App() {
     </>
   );
 }
-*/
 
+/*
 function App() {
   return (
     <>
@@ -25,5 +24,6 @@ function App() {
     </>
   );
 }
+*/
 
 export default App;
